@@ -1,0 +1,68 @@
+export const NAMES = {
+  BLG: "Благоевград",
+  LOV: "Ловеч",
+  DOB: "Добрич",
+  SLV: "Сливен",
+  KRZ: "Кърджали",
+  VAR: "Варна",
+  GAB: "Габрово",
+  BGS: "Бургас",
+  PAZ: "Пазарджик",
+  VID: "Видин",
+  SML: "Смолян",
+  TGV: "Търговище",
+  SFO: "София-град",
+  VTR: "В. Търново",
+  SLS: "Силистра",
+  SZR: "Ст. Загора",
+  HKV: "Хасково",
+  SHU: "Шумен",
+  JAM: "Ямбол",
+  SOF: "Софийска",
+  VRC: "Враца",
+  PDV: "Пловдив",
+  PER: "Перник",
+  PVN: "Плевен",
+  MON: "Монтана",
+  KNL: "Кюстендил",
+  RSE: "Русе",
+  RAZ: "Разград",
+};
+
+export const NEIGHBORS = {
+  BGS: ["JAM", "SHU", "SLV", "VAR"],
+  BLG: ["KNL", "PAZ", "SFO", "SML"],
+  DOB: ["SHU", "SLS", "VAR"],
+  GAB: ["LOV", "SZR", "VTR"],
+  HKV: ["JAM", "KRZ", "PDV", "SZR"],
+  JAM: ["BGS", "HKV", "SLV", "SZR"],
+  KNL: ["BLG", "PER", "SFO"],
+  KRZ: ["HKV", "PDV", "SML"],
+  LOV: ["GAB", "PDV", "PVN", "SFO", "SZR", "VRC", "VTR"],
+  MON: ["SFO", "VID", "VRC"],
+  PAZ: ["BLG", "PDV", "SFO", "SML"],
+  PDV: ["HKV", "KRZ", "LOV", "PAZ", "SFO", "SML", "SZR"],
+  PER: ["KNL", "SFO", "SOF"],
+  PVN: ["LOV", "VRC", "VTR"],
+  RAZ: ["RSE", "SHU", "SLS", "TGV"],
+  RSE: ["RAZ", "SLS", "TGV", "VTR"],
+  SFO: ["BLG", "KNL", "LOV", "MON", "PAZ", "PDV", "PER", "SOF", "VRC"],
+  SHU: ["BGS", "DOB", "RAZ", "SLS", "SLV", "TGV", "VAR"],
+  SLS: ["DOB", "RAZ", "RSE", "SHU"],
+  SLV: ["BGS", "JAM", "SHU", "SZR", "TGV", "VTR"],
+  SML: ["BLG", "KRZ", "PAZ", "PDV"],
+  SOF: ["PER", "SFO"],
+  SZR: ["GAB", "HKV", "JAM", "LOV", "PDV", "SLV", "VTR"],
+  TGV: ["RAZ", "RSE", "SHU", "SLV", "VTR"],
+  VAR: ["BGS", "DOB", "SHU"],
+  VID: ["MON"],
+  VRC: ["LOV", "MON", "PVN", "SFO"],
+  VTR: ["GAB", "LOV", "PVN", "RSE", "SLV", "SZR", "TGV"],
+};
+
+export const COLORS = [
+  { primary: "#3b82f6", light: "#93c5fd" }, // Blue
+  { primary: "#ef4444", light: "#fca5a5" }, // Red
+  { primary: "#22c55e", light: "#86efac" }, // Green
+  { primary: "#f59e0b", light: "#fcd34d" }, // Yellow
+];
